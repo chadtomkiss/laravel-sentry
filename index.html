@@ -43,13 +43,13 @@
         Routes:
 			  <pre>
 			    <code>
-			      <a href="{{ URL::route('account.signup') }}">Signup</a>
-			      <a href="{{ URL::route('account.login') }}">Login</a>
+			      Signup - {{ URL::route('account.signup') }}
+			      Login - {{ URL::route('account.login') }}
 			    </code>
 			  </pre>
 			  
 			  Notes:
-			    <p></p>$current_user is shared to all Views by using the App::before function in filters.php</p>
+			    <p>$current_user is shared to all Views by using the App::before function in filters.php</p>
 			    <p>This is the bare minimum to get started, nothing fancy like implementing the Repository pattern etc.</p>
  </section>
     </div>
