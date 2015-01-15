@@ -31,9 +31,9 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-       <p>Hey m8s. Just a simple Laravel + Sentry starter app to save you time writing signup and login.</p>
+       <p>Hey m8s. Just a simple Laravel + Sentry app to save you time writing signup and login.</p>
 	
-    	<p>To get started:</p>
+    	<h2>Getting Started</h2>
     	
     	<p>Create a local database config</p>
     	<pre><code>/app/config/local/database.php</code></pre>
@@ -43,16 +43,12 @@
         <pre><code>php artisan migrate --env=local</code></pre>
         
         <p>Routes</p>
-        <pre>
-        	<code>
-        		Signup - {{ URL::route('account.signup') }}
-        		Login - {{ URL::route('account.login') }}
-        	</code>
-        </pre>
+        <pre><code>{{ URL::route('account.signup') }}</code></pre>
+        <pre>{{ URL::route('account.login') }}</code></pre>
 			  
-		Notes:
-		<p>$current_user is shared to all Views by using the App::before function in filters.php</p>
-		<p>This is the bare minimum to get started, nothing fancy like implementing the Repository pattern etc.</p>
+	<p>Notes</p>
+	<p>$current_user is shared to all Views by using the App::before function in filters.php</p>
+	<p>This is the bare minimum to get started, nothing fancy like implementing the Repository pattern etc.</p>
  </section>
     </div>
 
